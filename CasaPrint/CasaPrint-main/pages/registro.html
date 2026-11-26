@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CasaPrint | Catálogo de impresoras</title>
+
+  <!-- Tipografías: Roboto (principal) y Open Sans (secundaria) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos comunes + estilos solo del catálogo (este va después) -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint" class="logo__img">
+      </a>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__tools">
+          <div class="navbar__tools">
+            <form class="navbar__buscar" action="catalogo.html" method="get" role="search">
+              <input type="search" name="q" class="navbar__search" placeholder="Buscar impresoras" aria-label="Buscar impresoras">
+              <button type="submit" class="btn">Buscar</button>
+            </form>
+            <a href="cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+    <!-- MAIN: contenido principal -->
+  <main class="login">
+  <div class="login__box">
+
+    <h1 class="login__title">Crear cuenta</h1>
+
+    <form id="form-registro" novalidate>
+
+      <div class="form-campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" autocomplete="username" required>
+      </div>
+
+      <div class="form-campo">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" autocomplete="email" required>
+      </div>
+
+      <div class="form-campo">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" autocomplete="new-password" minlength="6" required>
+      </div>
+
+      <div class="form-campo">
+        <label for="password2">Repite la contraseña</label>
+        <input type="password" id="password2" name="password2" autocomplete="new-password" required>
+      </div>
+
+      <p id="registro-mensaje" class="login__mensaje" role="alert" hidden></p>
+
+      <div class="login__botones">
+        <button type="submit" class="btn">Registrar</button>
+        <a href="cuenta.html" class="registro__volver">¿Ya tienes cuenta? Inicia sesión</a>
+      </div>
+
+    </form>
+
+  </div>
+</main>
+
+    <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+  <div class="container footer__container">
+
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint">
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Información de la empresa">
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../imagenes/logo/facebook-new.jpg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../imagenes/logo/instagram-new.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/" aria-label="Twitter">
+        <img src="../imagenes/logo/twitter-new.png" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer__copy">© 2026 CasaPrint. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../js/carrito.js"></script>
+<script src="../js/registro.js"></script>
+
+</body>
+</html>

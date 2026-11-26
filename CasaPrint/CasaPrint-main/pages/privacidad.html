@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CasaPrint | Catálogo de impresoras</title>
+
+  <!-- Tipografías: Roboto (principal) y Open Sans (secundaria) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos comunes + estilos solo del catálogo (este va después) -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint" class="logo__img">
+      </a>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__tools">
+          <div class="navbar__tools">
+            <form class="navbar__buscar" action="catalogo.html" method="get" role="search">
+              <input type="search" name="q" class="navbar__search" placeholder="Buscar impresoras" aria-label="Buscar impresoras">
+              <button type="submit" class="btn">Buscar</button>
+            </form>
+            <a href="cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+    <!-- MAIN: contenido principal -->
+  <main class="privacidad">
+  <div class="container privacidad__container">
+
+    <h1>Política de privacidad</h1>
+    <p class="privacidad__fecha">Última actualización: noviembre de 2026</p>
+
+    <section>
+      <h2>1. Responsable del tratamiento</h2>
+      <p>El responsable de tus datos personales es CasaPrint, con correo de contacto info@casaprint.es y teléfono +34 908 010 333.</p>
+    </section>
+
+    <section>
+      <h2>2. Datos que recogemos</h2>
+      <ul>
+        <li>Datos que nos facilitas en el formulario de contacto: nombre, correo electrónico y mensaje.</li>
+        <li>Datos necesarios para gestionar tus pedidos: nombre, dirección de envío y datos de contacto.</li>
+        <li>Datos de navegación, como las páginas visitadas y el tipo de dispositivo, mediante cookies.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Finalidad del tratamiento</h2>
+      <ul>
+        <li>Responder a tus consultas y solicitudes.</li>
+        <li>Gestionar y enviar tus compras.</li>
+        <li>Mejorar el funcionamiento de la tienda.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Base legal</h2>
+      <p>Tratamos tus datos con tu consentimiento, para ejecutar el contrato de compra y para cumplir nuestras obligaciones legales.</p>
+    </section>
+
+    <section>
+      <h2>5. Conservación de los datos</h2>
+      <p>Conservamos tus datos solo durante el tiempo necesario para cumplir la finalidad para la que se recogieron y durante los plazos que exige la ley.</p>
+    </section>
+
+    <section>
+      <h2>6. Destinatarios</h2>
+      <p>No cedemos tus datos a terceros, salvo obligación legal o proveedores necesarios para prestar el servicio, como la empresa de transporte o el servicio de pago.</p>
+    </section>
+
+    <section>
+      <h2>7. Tus derechos</h2>
+      <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a info@casaprint.es. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (aepd.es).</p>
+    </section>
+
+    <section>
+      <h2>8. Cookies</h2>
+      <p>Esta web utiliza cookies para recordar tu carrito y analizar el uso de la tienda. Puedes desactivarlas desde la configuración de tu navegador.</p>
+    </section>
+
+    <p class="privacidad__volver"><a href="index.html" class="btn">Volver al inicio</a></p>
+
+  </div>
+</main>
+
+    <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+  <div class="container footer__container">
+
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint">
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Información de la empresa">
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../imagenes/logo/facebook-new.jpg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../imagenes/logo/instagram-new.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/" aria-label="Twitter">
+        <img src="../imagenes/logo/twitter-new.png" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer__copy">© 2026 CasaPrint. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../js/carrito.js"></script>
+
+</body>
+</html>

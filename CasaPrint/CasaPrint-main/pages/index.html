@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CasaPrint | Inicio</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint" class="logo__img">
+      </a>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__tools">
+          <div class="navbar__tools">
+            <form class="navbar__buscar" action="catalogo.html" method="get" role="search">
+              <input type="search" name="q" class="navbar__search" placeholder="Buscar impresoras" aria-label="Buscar impresoras">
+              <button type="submit" class="btn">Buscar</button>
+            </form>
+            <a href="cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ===== MAIN: contenido principal ===== -->
+  <main class="main">
+    <div class="container">
+
+      <h1 class="main__title">Impresoras destacadas</h1>
+
+      <!-- Cuadrícula de productos -->
+      <section class="products" aria-label="Productos destacados">
+
+        <article class="product-card">
+          <img src="../imagenes/products/impresoraBrotherLaserMono.webp" alt="Impresora multifunción de laser" class="product-card__img">
+          <h2 class="product-card__name">Brother HL-L2445DW Impresora Láser Monocromo WiFi Dúplex</h2>
+          <p class="product-card__price">139,99 €</p>
+          <button type="button" class="btn btn-anadir" data-id="brother-hl-l2445dw">Añadir al carrito</button>
+        </article>
+
+        <article class="product-card">
+          <img src="../imagenes/products/impresoraHPLaserMono.webp" alt="Impresora láser monocromo" class="product-card__img">
+          <h2 class="product-card__name">HP Laserjet M110w Impresora Láser Monocromo WiFi</h2>
+          <p class="product-card__price">99,00 €</p>
+          <button type="button" class="btn btn-anadir" data-id="hp-m110w">Añadir al carrito</button>
+        </article>
+
+        <article class="product-card">
+          <img src="../imagenes/products/impresoraHP3202laserRecond.webp" alt="Impresora fotográfica" class="product-card__img">
+          <h2 class="product-card__name">HP Color LaserJet Pro 3202dw Impresora Láser Color WiFi Dúplex Reacondicionado</h2>
+          <p class="product-card__price">295,90 €</p>
+          <button type="button" class="btn btn-anadir" data-id="hp-3202dw">Añadir al carrito</button>
+        </article>
+
+        <article class="product-card">
+          <img src="../imagenes/products/ImpresoraHPSmartTankTinta.webp" alt="Impresora láser color" class="product-card__img">
+          <h2 class="product-card__name">HP Smart Tank 5106 Impresora Multifunción Color WiFi con Depósito Recargable + 3 Años de Tinta</h2>
+          <p class="product-card__price">159,00 €</p>
+          <button type="button" class="btn btn-anadir" data-id="hp-smart-tank-5106">Añadir al carrito</button>
+        </article>
+
+        <article class="product-card">
+          <img src="../imagenes/products/impresoraHPDesignjetProfesional.webp" alt="Impresora compacta Wi-Fi" class="product-card__img">
+          <h2 class="product-card__name">Impresora Inyección de tinta Wi-Fi HP Designjet T630 36″ Multifunción profesional</h2>
+          <p class="product-card__price">1266,95 €</p>
+          <button type="button" class="btn btn-anadir" data-id="hp-designjet-t630">Añadir al carrito</button>
+        </article>
+
+        <article class="product-card">
+          <img src="../imagenes/products/impresoraHPLaserM612Recond.webp" alt="Impresora con depósito recargable" class="product-card__img">
+          <h2 class="product-card__name">HP LaserJet Enterprise M612dn Impresora Láser Monocromo Dúplex</h2>
+          <p class="product-card__price">659 €</p>
+          <button type="button" class="btn btn-anadir" data-id="hp-m612dn">Añadir al carrito</button>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ===== ASIDE: valoraciones ===== -->
+  <aside class="reviews">
+    <div class="container">
+
+      <h2 class="reviews__title">Valoraciones de nuestros clientes</h2>
+
+      <div class="reviews__grid">
+
+        <blockquote class="review-card">
+          <p class="review-card__text">Llegó en dos días y funciona perfectamente con el móvil.</p>
+          <footer class="review-card__author">Laura M. · <span class="stars">★★★★★</span></footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <p class="review-card__text">Buena calidad de impresión y fácil de configurar.</p>
+          <footer class="review-card__author">Ana M. · <span class="stars">★★★★☆</span></footer>
+        </blockquote>
+
+        <blockquote class="review-card">
+          <p class="review-card__text">Me ayudaron a elegir el modelo que necesitaba para casa.</p>
+          <footer class="review-card__author">Antonio D. · <span class="stars">★★★★★</span></footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+  <div class="container footer__container">
+
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint">
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Información de la empresa">
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../imagenes/logo/facebook-new.jpg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../imagenes/logo/instagram-new.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/" aria-label="Twitter">
+        <img src="../imagenes/logo/twitter-new.png" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer__copy">© 2026 CasaPrint. Todos los derechos reservados.</p>
+</footer>
+
+  <script src="../js/carrito.js"></script>
+
+</body>
+</html>

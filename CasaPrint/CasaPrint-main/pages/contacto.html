@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CasaPrint | Contacto</title>
+
+  <!-- Tipografías: Roboto (principal) y Open Sans (secundaria) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos comunes + estilos solo del catálogo (este va después) -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint" class="logo__img">
+      </a>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__tools">
+          <div class="navbar__tools">
+            <form class="navbar__buscar" action="catalogo.html" method="get" role="search">
+              <input type="search" name="q" class="navbar__search" placeholder="Buscar impresoras" aria-label="Buscar impresoras">
+              <button type="submit" class="btn">Buscar</button>
+            </form>
+            <a href="cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+    <!-- MAIN: contenido principal -->
+  <main class="contacto">
+  <div class="container">
+
+    <h1 class="contacto__title">Contacto</h1>
+
+    <div class="contacto__grid">
+
+      <div class="contacto__mapa">
+        <iframe
+          title="Mapa de la ubicación de CasaPrint"
+          src="https://maps.google.com/maps?q=43.5255525,-5.6121862&z=17&output=embed"
+
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <section class="info-box">
+        <h2>Horario</h2>
+        <p>Lunes a viernes: 9:00 - 17:00</p>
+        <p>Sábados/Domingos: cerrado</p>
+      </section>
+
+      <section class="info-box">
+        <h2>Contacto</h2>
+        <p>info@casaprint.es</p>
+        <p>+34 908 010 333</p>
+      </section>
+
+      <section class="info-box">
+        <h2>Localización</h2>
+        <p>Los Prados, 121, Periurbano - Rural</p>
+        <p>33394 Gijón, Asturias</p>
+      </section>
+
+    </div>
+
+    <section class="contacto__form">
+      <h2>Escríbenos</h2>
+      <p>¿Tienes dudas sobre una impresora o un pedido? Cuéntanos qué necesitas y te responderemos en un plazo máximo de 24 horas laborables.</p>
+
+      <form id="form-contacto" action="#" method="post">
+
+        <div class="form-campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+        <p id="form-ok" class="form-ok" hidden>Gracias, hemos recibido tu mensaje.</p>
+
+      </form>
+    </section>
+
+  </div>
+</main>
+
+    <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+  <div class="container footer__container">
+
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint">
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Información de la empresa">
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../imagenes/logo/facebook-new.jpg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../imagenes/logo/instagram-new.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/" aria-label="Twitter">
+        <img src="../imagenes/logo/twitter-new.png" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer__copy">© 2026 CasaPrint. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="../js/carrito.js"></script>
+    <script src="../js/contacto.js"></script>
+
+</body>
+</html>

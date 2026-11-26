@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CasaPrint | Catálogo de impresoras</title>
+
+  <!-- Tipografías: Roboto (principal) y Open Sans (secundaria) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos comunes + estilos solo del catálogo (este va después) -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint" class="logo__img">
+      </a>
+
+      <!-- Barra de navegación -->
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="navbar__tools">
+          <div class="navbar__tools">
+            <form class="navbar__buscar" action="catalogo.html" method="get" role="search">
+              <input type="search" name="q" class="navbar__search" placeholder="Buscar impresoras" aria-label="Buscar impresoras">
+              <button type="submit" class="btn">Buscar</button>
+            </form>
+            <a href="cuenta.html">Mi cuenta</a>
+            <a href="carrito.html">Carrito (<span id="carrito-contador">0</span>)</a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+    <!-- MAIN: contenido principal -->
+  <main class="nosotros">
+  <div class="container">
+
+    <h1 class="nosotros__title">Quiénes somos</h1>
+
+    <div class="nosotros__grid">
+
+      <section class="info-box">
+        <h2>Nuestra historia</h2>
+        <p>CasaPrint nació para acercar la impresión de calidad a hogares y pequeñas empresas, con un catálogo claro y fácil de entender.</p>
+      </section>
+
+      <section class="info-box">
+        <h2>Qué ofrecemos</h2>
+        <p>Impresoras de tinta y láser, multifunciones, tinta y tóner de las principales marcas, incluyendo equipos reacondicionados.</p>
+      </section>
+
+      <section class="info-box">
+        <h2>Nuestros valores</h2>
+        <p>Asesoramiento honesto, precios transparentes y productos revisados antes de llegar a tu casa.</p>
+      </section>
+
+      <section class="info-box">
+        <h2>Atención al cliente</h2>
+        <p>Te ayudamos a elegir el modelo adecuado y resolvemos tus dudas por correo o teléfono en un máximo de 24 horas laborables.</p>
+      </section>
+
+    </div>
+
+    <div class="nosotros__mapa">
+      <iframe
+        title="Mapa de la ubicación de CasaPrint"
+        src="https://maps.google.com/maps?q=43.5255525,-5.6121862&z=17&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</main>
+
+    <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+
+  <div class="container footer__container">
+
+    <div class="footer__logo">
+      <a href="index.html">
+        <img src="../imagenes/logo/LogoCasaPrintHeader.png" alt="CasaPrint">
+      </a>
+    </div>
+
+    <nav class="footer__nav" aria-label="Información de la empresa">
+      <ul>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://www.facebook.com/" aria-label="Facebook">
+        <img src="../imagenes/logo/facebook-new.jpg" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/" aria-label="Instagram">
+        <img src="../imagenes/logo/instagram-new.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.twitter.com/" aria-label="Twitter">
+        <img src="../imagenes/logo/twitter-new.png" alt="Twitter">
+      </a>
+    </div>
+
+  </div>
+
+  <p class="footer__copy">© 2026 CasaPrint. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="../js/carrito.js"></script>
+
+</body>
+</html>
