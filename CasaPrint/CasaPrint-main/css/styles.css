@@ -60,7 +60,7 @@ h1, h2, h3 {
 /* ---------- Contenedor general ---------- */
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -339,38 +339,44 @@ input:focus-visible {
    RESPONSIVE
    ========================================================= */
 @media (max-width: 800px) {
+  /* Header en una sola columna */
   .header__container {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    justify-items: start;
     gap: 16px;
   }
 
-  @media (max-width: 1000px) {
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-  .products {
-    grid-template-columns: repeat(2, 1fr);
+  .logo,
+  .navbar__list,
+  .navbar__tools {
+    grid-column: 1;
+    justify-self: start;
   }
 
-  .reviews__grid,
-  .footer__container {
-    grid-template-columns: 1fr;
+  .navbar__tools {
+    flex-wrap: wrap;
   }
-}
 
-@media (max-width: 520px) {
-  .products {
+  /* Contenido */
+  .reviews__grid {
     grid-template-columns: 1fr;
   }
 
-  .navbar__list {
-    gap: 12px;
+  /* Footer apilado */
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__nav ul {
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+
+  .footer__copy {
+    padding-left: 0;
   }
 }
-
 /* =========================================================
    CasaPrint - Estilos solo de la página Catálogo
    ========================================================= */
@@ -591,24 +597,23 @@ input:focus-visible {
 }
 
 @media (max-width: 768px) {
+  .producto {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .similares__grid {
     grid-template-columns: 1fr;
   }
 
   .producto__acciones {
+    flex-direction: column;
     align-items: stretch;
   }
-}
 
-/* ===== CARRITO ===== */
-
-.carrito-item__img {
-  width: 80px;
-  height: auto;
-}
-
-.carrito-item__cantidad {
-  padding: 6px;
+  .producto__acciones input {
+    width: 100%;
+  }
 }
 
 /* ===== CARRITO ===== */
@@ -757,24 +762,6 @@ input:focus-visible {
 .product-card .btn {
   position: relative;
   z-index: 1;
-}
-
-@media (max-width: 768px) {
-  .producto {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .carrito-item {
-    grid-template-columns: 70px 1fr;
-  }
-
-  .carrito-item__cantidad,
-  .carrito-item__subtotal,
-  .carrito-item__eliminar {
-    grid-column: 2;
-    justify-self: start;
-  }
 }
 
 /* ===== CONTACTO ===== */
@@ -967,11 +954,6 @@ input:focus-visible {
   .nosotros__mapa iframe {
     height: 260px;
   }
-}
-
-.info-box:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* ===== LOGIN ===== */
